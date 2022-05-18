@@ -3,11 +3,23 @@ a quick script to check if we should commute to work by bike
 
 Enter the lattitude and longitude of points along your route
 
+```Line 2: locations=[[38.029649, -78.807175],[38.044573, -78.725776]]```
+
 Enter your commute times (eg, I'm flexible, and willing to commute to work anywhere between 8-10am (i'd enter 8,9), and come home anywhere between 4 and 7 (16,17,18)
+
+```Line 3: times=[8,9,16,17,18] # 8am, 9am, 4pm, 5pm, 6pm```
 
 make an openweathermap.org account (free subscription should do!), and enter your api key
 
+```Line 4: key="123456789abcdefghijkl"```
+
+
 consider what conditions you're willing to commute in: skip it when it's too cold? add "temp" to "minimums". okay with a light drizzle, but want to avoid the downpour? add "rain.1h" to "maximums" (see here for a full list of parameters: https://openweathermap.org/api/one-call-api#parameter )
+
+```
+Line 5: maximums={"rain.1h":1,"temp":25}
+Line 6: minimums={"temp":7}	
+```
 
 run the code. (eg: python3 motoWeather.py). 
 
