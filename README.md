@@ -48,4 +48,4 @@ l1	1.0	1.0	0.0	0.0	1.0
 l2	1.0	1.0	0.0	0.0	0.0
 l3	1.0	1.0	0.0	0.0	1.0
 ```
-where we're looking for two (one morning, one evening) columns of 1s (all weather conditions passed, at this time, at each location). in this example, our overly conservative limitation of a max temp of 25C (for Virginia, that is!) says there are no evening times to ride home! 
+where we're looking for two (one morning, one evening) columns of 1s (all weather conditions passed, at this time, at each location). in this example, our overly conservative limitation of a max temp of 25C (good luck with that in Virginia!) says there are no evening times to ride home! 
